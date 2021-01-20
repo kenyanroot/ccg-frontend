@@ -11,7 +11,6 @@
     margin: 0;
     padding: 0;
     font-family: "Agency FB";
-    #font-family: consolas;
     box-sizing: border-box;
     
 
@@ -129,67 +128,25 @@ nav ul {
    
 }
 
-section{
+.homediv{
 
     position: relative;
     width:100% ;
-    height: 100vh;
+    height: 600px;
     overflow: hidden;
     background-image:linear-gradient( 180deg, #4696e5,  #4696e5);rgba(132, 0, 255,1)
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 
 }
 
-section h2{
-    font-size: 1em;
+.homediv h1{
+    font-size: 4em;
+    color: white;
     
-}
-
-section span {
-    position: absolute;
-    bottom: -50px;
-    background: transparent;
-    border-radius: 50%;
-    pointer-events: none;
-    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.9);
-    animation: animate 4s  linear infinite ;
-    color:white;
-    
-
-}
-
-section span:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform:scale(0.25) translate(-70% ,-70%);
-    background: radial-gradient(#fff) , transparent);
-    border-radius:50%;
-
-
-}
-
-@keyframes animate {
-    0% {
-        transform: translateY(0%);
-        opacity: 1;
-
-    }
-
-    90% {
-        transform: translateY(0%);
-        opacity: 1;
-
-    }
-
-    100% {
-        transform: translateY(-1200%);
-        opacity: 0;
-
-    }
-
-
 }
 
 .slideup{
@@ -709,17 +666,25 @@ ul{
 
 
 
-  section{
-      min-height: 100vh;
-  }
-
-  .background section{
-    text-align: center;
-    vertical-align: middle;
-    line-height: 600px;   
-  }
 
   .content{
       margin-top: 60px;
       margin-bottom: 80px;
+  }
+
+  .locationdiv{
+    /* display: flex;
+    */
+    margin-bottom: 100px;
+    margin-top: 150px; 
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .other-churches{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B65EC;
   }
